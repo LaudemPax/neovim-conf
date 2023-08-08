@@ -7,8 +7,6 @@ lsp.ensure_installed({
   "eslint",
   -- markdown
   "marksman",
-  -- python
-  "pyre",
 })
 
 lsp.on_attach(function(client, bufnr)
