@@ -8,7 +8,7 @@ lsp.ensure_installed({
   -- markdown
   "marksman",
   -- python
-  "jedi-language-server"
+  "jedi_language_server"
 })
 
 lsp.on_attach(function(client, bufnr)
