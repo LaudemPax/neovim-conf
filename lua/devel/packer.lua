@@ -53,4 +53,13 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  -- LSP improvements
+  use ({
+      'nvimdev/lspsaga.nvim',
+      after = 'nvim-lspconfig',
+      config = function()
+          require('lspsaga').setup({})
+      end,
+  })
+
 end)
