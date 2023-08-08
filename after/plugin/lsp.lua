@@ -7,6 +7,8 @@ lsp.ensure_installed({
   "eslint",
   -- markdown
   "marksman",
+  -- python
+  "jedi-language-server"
 })
 
 lsp.on_attach(function(client, bufnr)
