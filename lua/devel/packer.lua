@@ -12,9 +12,11 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- Color scheme:
+  -- Color scheme(s):
   use('Mofiqul/vscode.nvim')
+  use('folke/tokyonight.nvim')
 
+  -- treesitter
   use {
 	  'nvim-treesitter/nvim-treesitter',
 	  run = function()
@@ -22,6 +24,7 @@ return require('packer').startup(function(use)
 		  ts_update()
 	  end,
   }
+
 
   use("theprimeagen/harpoon")
   use("theprimeagen/refactoring.nvim")
