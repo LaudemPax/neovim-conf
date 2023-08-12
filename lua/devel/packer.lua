@@ -25,13 +25,14 @@ return require('packer').startup(function(use)
 	  end,
   }
 
-
+  -- miscellaneous plugins
   use("theprimeagen/harpoon")
   use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context");
   use("nvim-tree/nvim-tree.lua")
+  use("akinsho/toggleterm.nvim")
 
   -- autpairs
   use {
