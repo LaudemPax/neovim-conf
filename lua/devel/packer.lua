@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
   use("nvim-treesitter/nvim-treesitter-context");
   use("nvim-tree/nvim-tree.lua")
   use("akinsho/toggleterm.nvim")
+  use("ggandor/leap.nvim")
 
   -- autpairs
   use {
