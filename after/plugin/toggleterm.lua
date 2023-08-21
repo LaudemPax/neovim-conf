@@ -1,4 +1,5 @@
 require("toggleterm").setup({
-    open_mapping = [[T]],
+    open_mapping = [[<Tab>t]],
+    insert_mappings = false,
     direction = 'horizontal'
 })
