@@ -10,7 +10,7 @@ vim.api.nvim_set_keymap('n', '<leader>ca', ':CopyWholeFileToClipboard<CR>', { no
 
 -- remap save file to ctrl+s
 vim.cmd([[
-  command! SaveFile :w + | echom 'File saved'
+  command! SaveFile :w | echom 'File saved'
 ]])
 
 vim.api.nvim_set_keymap('n', '<C-s>', ':SaveFile <CR>', { noremap = true, silent = true })
