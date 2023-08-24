@@ -1,4 +1,4 @@
 local saga = require('lspsaga')
 
 saga.setup({})
-vim.keymap.set("n", "<C-r>", "<cmd>Lspsaga rename<cr>")
+vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<cr>")
