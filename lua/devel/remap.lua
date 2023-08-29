@@ -18,3 +18,12 @@ vim.api.nvim_set_keymap('n', '<C-s>', ':SaveFile <CR>', { noremap = true, silent
 -- remap move lines up  or down
 vim.api.nvim_set_keymap('n', '<A-j>', ':m .+1<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<A-k>', ':m .-2<CR>', { noremap = true, silent = true })
+
+-- Remap Ctrl+U to Ctrl+Up
+vim.api.nvim_set_keymap('n', '<C-Up>', '<C-U>', { noremap = true })
+
+-- Remap Ctrl+D to Ctrl+Down
+vim.api.nvim_set_keymap('n', '<C-Down>', '<C-D>', { noremap = true })
+
+-- Remap leader + fr to format
+vim.api.nvim_set_keymap('v', '<leader>fr', '=', { noremap = true })
