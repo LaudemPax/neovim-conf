@@ -16,8 +16,8 @@ vim.cmd([[
 vim.api.nvim_set_keymap('n', '<C-s>', ':SaveFile <CR>', { noremap = true, silent = true })
 
 -- remap move lines up  or down
-vim.api.nvim_set_keymap('n', '<A-j>', ':m .+1<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<A-k>', ':m .-2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-Up>', ':m .-2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-Down>', ':m .+1<CR>', { noremap = true, silent = true })
 
 -- Remap Ctrl+U to Ctrl+Up
 vim.api.nvim_set_keymap('n', '<C-Up>', '<C-U>', { noremap = true })
