@@ -13,7 +13,7 @@ vim.cmd([[
   command! SaveFile :w
 ]])
 
-vim.api.nvim_set_keymap('n', '<C-s>', ':SaveFile <CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-s>', ':SaveFile <CR>', { noremap = true, silent = true })
 
 -- remap move lines up  or down
 vim.api.nvim_set_keymap('n', '<A-Up>', ':m .-2<CR>', { noremap = true, silent = true })
