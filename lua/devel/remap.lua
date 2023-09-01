@@ -27,3 +27,9 @@ vim.api.nvim_set_keymap('n', '<C-Down>', '<C-D>', { noremap = true })
 
 -- Remap leader + fr to format
 vim.api.nvim_set_keymap('v', '<leader>fr', '=', { noremap = true })
+
+-- close quickfix menu after selecting choice
+vim.api.nvim_create_autocmd(
+  "FileType", {
+  pattern={"qf"},
+  command=[[nnoremap <buffer> <CR> <CR>:cclose<CR>]]})
