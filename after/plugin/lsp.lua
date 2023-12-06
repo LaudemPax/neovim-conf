@@ -1,14 +1,15 @@
 local lsp = require('lsp-zero').preset({})
 
 lsp.ensure_installed({
-  -- javascript/ts
-  "tsserver",
-  -- eslint
-  "eslint",
-  -- markdown
-  "marksman",
-  -- python
-  "jedi_language_server"
+    -- markdown
+    "marksman",
+    -- python
+    "jedi_language_server",
+    -- for lua
+    "lua_ls",
+    "cmake",
+    "bashls",
+    "java-language-server"
 })
 
 lsp.on_attach(function(client, bufnr)
