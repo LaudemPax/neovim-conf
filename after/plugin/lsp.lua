@@ -9,7 +9,7 @@ lsp.ensure_installed({
     "lua_ls",
     "cmake",
     "bashls",
-    "java-language-server"
+    "jdtls"
 })
 
 lsp.on_attach(function(client, bufnr)
