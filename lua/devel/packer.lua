@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
     use("akinsho/toggleterm.nvim")
     use("ggandor/leap.nvim")
     use("mfussenegger/nvim-jdtls")
+    use("lervag/vimtex")
     use({
         "kdheepak/lazygit.nvim",
         -- optional for floating window border decoration
