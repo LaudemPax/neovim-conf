@@ -5,6 +5,6 @@ local config = {
 require('jdtls').start_or_attach(config)
 
 local o = vim.opt_local
-o.expandtab = true
+o.expandtab = false
 o.softtabstop = 8
 o.shiftwidth = 8
